@@ -373,4 +373,4 @@ See [LICENSE](LICENSE) for full text.
 
 ---
 
-**alpho-tsana** | [GitHub](https://github.com/alpho-tsana) | [Discord](https://hasq.net) | [Website](https://alpho-tsana.net)
+**alpho-tsana** | [GitHub](https://github.com/alpho-tsana) | [Discord](https://hasq.net) | [Website](https://tsana.net)
