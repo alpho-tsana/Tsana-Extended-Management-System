@@ -28,7 +28,7 @@ Setup instructions for TEMS - Tsana Extended Management System v0.3.
 **Method A: Git Clone (Recommended)**
 ```bash
 cd ~
-git clone https://github.com/EngineerAlpho/dayz-mod-scripts.git tems
+git clone https://github.com/alpho-tsana/dayz-mod-scripts.git tems
 cd tems
 ```
 

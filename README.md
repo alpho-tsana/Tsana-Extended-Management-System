@@ -2,7 +2,7 @@
 
 **Version 0.3** | **Professional mod management for DayZ Linux servers using SteamCMD and LinuxGSM**
 
-Created by Engineer Alpho (with assistance from Claude/Anthropic) | License: GPL-3.0
+Created by alpho-tsana (with assistance from Claude/Anthropic) | License: GPL-3.0
 
 [![Version](https://img.shields.io/badge/version-0.3-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-GPL--3.0-green.svg)](LICENSE)
@@ -358,7 +358,7 @@ See [LICENSE](LICENSE) for full text.
 
 ## Credits
 
-- **Created by:** Engineer Alpho (with assistance from Claude/Anthropic)
+- **Created by:** alpho-tsana (with assistance from Claude/Anthropic)
 - **Developed for:** DayZ Linux server administration community
 - **Special thanks to:** HASQ Gaming Community for testing and feedback
 
@@ -373,4 +373,4 @@ See [LICENSE](LICENSE) for full text.
 
 ---
 
-**Engineer Alpho** | [GitHub](https://github.com/EngineerAlpho) | [Discord](https://hasq.net) | [Website](https://engineeralpho.net)
+**alpho-tsana** | [GitHub](https://github.com/alpho-tsana) | [Discord](https://hasq.net) | [Website](https://alpho-tsana.net)

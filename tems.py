@@ -2,9 +2,9 @@
 # =============================================================================
 # TEMS - Tsana Extended Management System
 # Version: 0.3
-# Author: Engineer Alpho (with assistance from Claude/Anthropic)
+# Author: alpho-tsana (with assistance from Claude/Anthropic)
 # License: GPL-3.0
-# Repository: https://github.com/EngineerAlpho/dayz-mod-scripts
+# Repository: https://github.com/alpho-tsana/dayz-mod-scripts
 # =============================================================================
 #
 # Consolidated tool replacing the individual shell scripts:
@@ -354,15 +354,40 @@ def check_disk_space(path: str, warn_gb: int = 5):
 
 # ─── Backup helpers ────────────────────────────────────────────────────────
 
+def _get_active_mission_storage(config: Config) -> Path | None:
+    """Resolve the storage_1 path for the active mission.
+
+    Reads ``active_mission`` from merge_config.json (falls back to the
+    mission_dir value in tems.yaml) and returns the ``storage_1``
+    subdirectory under the correct mpmissions folder.
+    """
+    merge_cfg_path = Path(__file__).resolve().parent / "merge_config.json"
+    mpmissions_base = Path(config.mission_dir).parent  # e.g. ~/serverfiles/mpmissions
+
+    if merge_cfg_path.exists():
+        try:
+            with open(merge_cfg_path, "r") as f:
+                merge_cfg = json.load(f)
+            active = merge_cfg.get("active_mission", "")
+            if active:
+                return mpmissions_base / active / "storage_1"
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    # Fallback: derive from tems.yaml mission_dir
+    return Path(config.mission_dir) / "storage_1"
+
+
 def gather_backup_paths(config: Config, scopes: list[str]) -> list[Path]:
     """Given a list of scopes (world, mods, configs), return source paths."""
     paths: list[Path] = []
     if "world" in scopes:
-        mission = Path(config.mission_dir)
-        if mission.is_dir():
-            paths.append(mission)
+        storage = _get_active_mission_storage(config)
+        if storage and storage.is_dir():
+            print(Colors.blue(f"  Backing up world data: {storage}"))
+            paths.append(storage)
         else:
-            print(Colors.yellow(f"Warning: Mission dir not found: {mission}"))
+            print(Colors.yellow(f"Warning: World storage dir not found: {storage}"))
     if "mods" in scopes:
         mods = Path(config.server_mods_dir)
         if mods.is_dir():

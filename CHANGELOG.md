@@ -87,6 +87,6 @@ See the README for guidelines on how to contribute.
 
 ---
 
-[0.3]: https://github.com/EngineerAlpho/TsanaExtendedManagementSystem/releases/tag/v0.3
-[0.2]: https://github.com/EngineerAlpho/TsanaExtendedManagementSystem/releases/tag/v0.2
-[0.1]: https://github.com/EngineerAlpho/TsanaExtendedManagementSystem/releases/tag/v0.1
+[0.3]: https://github.com/alpho-tsana/TsanaExtendedManagementSystem/releases/tag/v0.3
+[0.2]: https://github.com/alpho-tsana/TsanaExtendedManagementSystem/releases/tag/v0.2
+[0.1]: https://github.com/alpho-tsana/TsanaExtendedManagementSystem/releases/tag/v0.1
