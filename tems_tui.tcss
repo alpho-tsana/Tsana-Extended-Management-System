@@ -1,0 +1,239 @@
+/* ─── TEMS Textual TUI — Claude Code-inspired dark theme ─────────────── */
+
+Screen {
+    background: #1a1a2e;
+}
+
+/* ─── ASCII Header ──────────────────────────────────────────────────── */
+
+#tems-header {
+    color: #00cc66;
+    text-style: bold;
+    padding: 0 2;
+    border-bottom: solid #00cc66 30%;
+    height: auto;
+    background: #111122;
+}
+
+/* ─── Main Menu ─────────────────────────────────────────────────────── */
+
+#menu-list {
+    background: #1a1a2e;
+    padding: 1 2;
+    height: 1fr;
+}
+
+#menu-list > ListItem {
+    padding: 1 2;
+    background: #1e1e38;
+    margin: 0 0 1 0;
+    height: auto;
+}
+
+#menu-list > ListItem:hover {
+    background: #2a2a4e;
+}
+
+#menu-list > ListItem.-highlight {
+    background: #00cc66 20%;
+}
+
+#menu-list > ListItem.--highlight {
+    background: #00cc66 20%;
+}
+
+/* ─── Buttons ───────────────────────────────────────────────────────── */
+
+Button {
+    margin: 1 1;
+}
+
+Button.primary {
+    background: #00cc66;
+    color: #000000;
+}
+
+Button.primary:hover {
+    background: #00ee77;
+}
+
+Button.danger {
+    background: #cc3333;
+    color: #ffffff;
+}
+
+Button.danger:hover {
+    background: #ee4444;
+}
+
+Button.secondary {
+    background: #333355;
+    color: #cccccc;
+}
+
+Button.secondary:hover {
+    background: #444477;
+}
+
+/* ─── Input ─────────────────────────────────────────────────────────── */
+
+Input {
+    margin: 1 0;
+    border: tall #333355;
+    background: #111122;
+}
+
+Input:focus {
+    border: tall #00cc66;
+}
+
+/* ─── RichLog (terminal output) ─────────────────────────────────────── */
+
+RichLog {
+    background: #0a0a0a;
+    color: #cccccc;
+    border: round #333355;
+    padding: 1 1;
+    height: 1fr;
+}
+
+/* ─── DataTable ─────────────────────────────────────────────────────── */
+
+DataTable {
+    background: #111122;
+    height: 1fr;
+}
+
+DataTable > .datatable--header {
+    background: #0d3320;
+    color: #00cc66;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #00cc66 30%;
+    color: #ffffff;
+}
+
+DataTable > .datatable--hover {
+    background: #222244;
+}
+
+/* ─── RadioSet / RadioButton ────────────────────────────────────────── */
+
+RadioSet {
+    background: #1a1a2e;
+    border: tall #333355;
+    padding: 1 1;
+    margin: 1 0;
+}
+
+RadioSet:focus {
+    border: tall #00cc66;
+}
+
+RadioButton {
+    background: #1a1a2e;
+    padding: 0 1;
+}
+
+/* ─── Static labels ─────────────────────────────────────────────────── */
+
+.section-title {
+    color: #00cc66;
+    text-style: bold;
+    padding: 1 0 0 0;
+}
+
+.info-text {
+    color: #6688aa;
+    padding: 0 0 1 0;
+}
+
+.success-text {
+    color: #00cc66;
+}
+
+.error-text {
+    color: #cc3333;
+}
+
+.warning-text {
+    color: #ccaa33;
+}
+
+/* ─── Containers ────────────────────────────────────────────────────── */
+
+#content-area {
+    padding: 1 2;
+    height: 1fr;
+}
+
+.form-group {
+    height: auto;
+    padding: 0 0 1 0;
+}
+
+.button-bar {
+    height: auto;
+    layout: horizontal;
+    padding: 1 0;
+}
+
+/* ─── Confirm Modal ─────────────────────────────────────────────────── */
+
+#confirm-dialog {
+    align: center middle;
+    width: 60;
+    height: auto;
+    background: #1e1e38;
+    border: thick #cc3333;
+    padding: 2 3;
+}
+
+#confirm-dialog Static {
+    width: 100%;
+    text-align: center;
+    margin: 1 0;
+}
+
+#confirm-dialog .button-bar {
+    align: center middle;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────────── */
+
+Footer {
+    background: #111122;
+    color: #6688aa;
+}
+
+Header {
+    display: none;
+}
+
+/* ─── ProgressBar ───────────────────────────────────────────────────── */
+
+ProgressBar {
+    padding: 1 0;
+}
+
+ProgressBar Bar {
+    color: #00cc66;
+    background: #333355;
+}
+
+/* ─── Select ────────────────────────────────────────────────────────── */
+
+Select {
+    margin: 1 0;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────── */
+
+* {
+    scrollbar-color: #333355;
+    scrollbar-color-hover: #00cc66;
+    scrollbar-color-active: #00ee77;
+    scrollbar-background: #111122;
+}
