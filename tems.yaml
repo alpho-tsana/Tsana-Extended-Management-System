@@ -1,0 +1,33 @@
+# =============================================================================
+# Tsana Extended Management System Configuration
+# Version: 0.5
+# Used by: tems.py
+# =============================================================================
+
+# Steam credentials
+steam_user: "hasq2026"
+steam_pass: "SolentSiteContact1!"
+
+# Server paths (~ expands to home directory)
+server_base_dir: "~"
+server_files_dir: "~/serverfiles"
+server_mods_dir: "~/serverfiles/mods"
+keys_dir: "~/serverfiles/keys"
+lgsm_config: "~/lgsm/config-lgsm/dayzserver/dayzserver.cfg"
+
+# SteamCMD
+steamcmd_path: "~/.steam/steamcmd/steamcmd.sh"
+workshop_dir: "~/.local/share/Steam/steamapps/workshop/content/221100"
+
+# Mod management
+mod_mapping_file: "~/.dayz_mod_mapping"
+dayz_app_id: 221100
+
+# Backup settings
+backup_dir: "~/backups/tems"
+backup_rclone_remote: ""
+backup_keep: 5
+backup_default_scope: ""
+backup_default_dest: ""
+mission_dir: "~/serverfiles/mpmissions/dayzOffline.chernarusplus"
+lgsm_script: "~/dayzserver"

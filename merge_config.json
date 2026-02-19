@@ -1,0 +1,20 @@
+{
+    "backup_enabled": true,
+    "backup_folder": "/home/banov1/scripts/tems-0.5/xml_backups",
+    "active_mission": "dayzOffline.chernarusplus",
+    "missions": {
+        "dayzOffline.chernarusplus": {
+            "types": "/home/banov1/serverfiles/mpmissions/dayzOffline.chernarusplus/db/types.xml",
+            "events": "/home/banov1/serverfiles/mpmissions/dayzOffline.chernarusplus/cfgeventspawns.xml",
+            "spawnabletypes": "/home/banov1/serverfiles/mpmissions/dayzOffline.chernarusplus/db/spawnabletypes.xml"
+        }
+    },
+    "mod_search_paths": [
+        "/home/banov1/serverfiles/mods"
+    ],
+    "merge_rules": {
+        "skip_vanilla_duplicates": true,
+        "overwrite_existing": false,
+        "preserve_comments": true
+    }
+}
