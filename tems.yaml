@@ -29,5 +29,5 @@ backup_rclone_remote: ""
 backup_keep: 5
 backup_default_scope: ""
 backup_default_dest: ""
-mission_dir: "~/serverfiles/mpmissions/dayzOffline.chernarusplus"
+mission_dir: "~/serverfiles/mpmissions/empty.banov"
 lgsm_script: "~/dayzserver"
